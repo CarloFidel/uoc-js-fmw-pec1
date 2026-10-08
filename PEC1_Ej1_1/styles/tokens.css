@@ -1,19 +1,19 @@
 :root {
-    color-scheme: light;
+    color-scheme: dark;
 
-    --color-page-background: #f3f5f9;
-    --color-surface: #fff;
-    --color-text-primary: #172033;
-    --color-text-secondary: #596579;
-    --color-text-on-accent: #fff;
-    --color-border: #e2e7f0;
-    --color-border-control: #bdc6d5;
-    --color-accent: #315bd6;
-    --color-accent-focus: #5e8ce045;
-    --color-control-secondary: #e9edf5;
-    --color-text-control-secondary: #25314a;
-    --color-feedback-error: #b42318;
-    --color-feedback-success: #167647;
+    --color-page-background: #0b1220;
+    --color-surface: #151f30;
+    --color-text-primary: #b5b6b7;
+    --color-text-secondary: #a9b5c8;
+    --color-text-on-accent: #081126;
+    --color-border: #2b394e;
+    --color-border-control: #5c759a61;
+    --color-accent: #727ca0;
+    --color-accent-focus: #8ba5ff66;
+    --color-control-secondary: #26344a;
+    --color-text-control-secondary: #e3eaf6;
+    --color-feedback-error: #ff7b7290;
+    --color-feedback-success: #5bdd9a;
 
     --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --font-size-caption: .875rem;
@@ -43,5 +43,5 @@
     --border-width-default: 1px;
     --focus-outline-width: 3px;
     --focus-outline-offset: 2px;
-    --shadow-form-card: 0 1rem 3rem #1b2b4a12;
+    --shadow-form-card: 0 1rem 3rem #00000040;
 }

@@ -12,9 +12,7 @@ export const formBeheviour = () => {
         if (!validateFilds()) return
 
         const formData = new FormData(htmlElements.form);
-
-
-        console.log(formData.data)
+        console.log(...formData.entries())
     });
 
 }

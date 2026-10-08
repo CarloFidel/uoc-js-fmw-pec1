@@ -3,7 +3,7 @@ import { HtmlElements } from "../../auth/HtmlElements.js"
 const htmlElements = new HtmlElements
 
 export const REGULAR_EXPRESSIONS = {
-    name: /^[a-zA-Z0-9_-]{2,}$/,
+    name: /^[A-Z][a-zA-Z0-9_-]{1,}$/,
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
     password: /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[~!@#$%^&*()_+\-={}|[\]\\:";'<>,.?])[A-Za-z\d~!@#$%^&*()_+\-={}|[\]\\:";'<>,.?]{8,}$/
 }
