@@ -11,36 +11,36 @@
 <body>
     <main>
         <h1>Crear cuenta</h1>
-        <form id="registration-form" novalidate>
+        <form id="registration-form">
             <div class="field">
                 <label for="username">Username</label>
-                <input id="username" name="username" type="text" autocomplete="username" required minlength="2" aria-describedby="username-error">
+                <input id="username" name="username" type="text" autocomplete="username"  minlength="2" aria-describedby="username-error">
                 <p class="error" id="username-error" aria-live="polite"></p>
             </div>
 
             <div class="field">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <input id="email" name="email" type="email" autocomplete="email"  aria-describedby="email-error">
                 <p class="error" id="email-error" aria-live="polite"></p>
             </div>
 
             <div class="field">
                 <label for="age">Edad</label>
-                <input id="age" name="age" type="number" min="0" max="99" step="any" inputmode="decimal" required aria-describedby="age-error">
+                <input id="age" name="age" type="number"  step="any" inputmode="decimal"  aria-describedby="age-error">
                 <p class="hint">Introduce un número desde 0 y menor que 1000.</p>
                 <p class="error" id="age-error" aria-live="polite"></p>
             </div>
 
             <div class="field">
                 <label for="password">Password</label>
-                <input id="password" name="password" type="password" autocomplete="new-password" required aria-describedby="password-hint password-error">
+                <input id="password" name="password" type="password" autocomplete="new-password"  aria-describedby="password-hint password-error">
                 <p class="hint" id="password-hint">Mínimo 8 caracteres e incluye mayúsculas, minúsculas, cifras y un signo permitido.</p>
                 <p class="error" id="password-error" aria-live="polite"></p>
             </div>
 
             <div class="field">
                 <label for="confirm-password">Confirm Password</label>
-                <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" required aria-describedby="confirm-password-error">
+                <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password"  aria-describedby="confirm-password-error">
                 <p class="error" id="confirm-password-error" aria-live="polite"></p>
             </div>
 
@@ -48,7 +48,6 @@
                 <button type="submit">Crear cuenta</button>
                 <button type="reset">Limpiar</button>
             </div>
-            <p id="form-status" role="status" aria-live="polite"></p>
         </form>
     </main>
     <script type="module" src="./index.js"></script>

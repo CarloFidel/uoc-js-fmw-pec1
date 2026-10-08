@@ -7,10 +7,12 @@ export const cleanInput = () => {
         const fieldName = event.target.name;
         if (htmlElements.errorElements[fieldName]) {
             htmlElements.errorElements[fieldName].textContent = "";
-            event.target.removeAttribute("aria-invalid");
         }
-        htmlElements.status.textContent = "";
-        htmlElements.status.removeAttribute("data-state");
+        const listOfClass = event.target.classList
+        if (listOfClass.contains("form-status-error")) {
+            listOfClass.remove("form-status-error");
+        }
+
     });
 
 }

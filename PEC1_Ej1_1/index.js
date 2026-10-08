@@ -4,7 +4,12 @@ import { clearErrors } from "./utility/clearErrors.js";
 import { reset } from "./utility/reset.js";
 
 
-cleanInput()
-clearErrors()
-reset()
-formBeheviour()
+
+const engine = () => {
+    cleanInput()
+    clearErrors()
+    reset()
+    formBeheviour()
+}
+
+engine()

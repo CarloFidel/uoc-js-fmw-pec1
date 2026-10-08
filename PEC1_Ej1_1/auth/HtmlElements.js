@@ -1,7 +1,6 @@
 export class HtmlElements {
     constructor() {
         this.form = document.querySelector("#registration-form");
-        this.status = document.querySelector("#form-status");
         this.fields = {
             username: document.querySelector("#username"),
             email: document.querySelector("#email"),

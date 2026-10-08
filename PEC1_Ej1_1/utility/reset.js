@@ -6,7 +6,5 @@ const htmlElements = new HtmlElements();
 export const reset = () => {
     htmlElements.form.addEventListener("reset", () => {
         clearErrors();
-        htmlElements.status.textContent = "";
-        htmlElements.status.removeAttribute("data-state");
     });
 }
