@@ -4,12 +4,10 @@ export class HtmlElements {
         this.amountOne = document.querySelector("#amount-one");
         this.currencyTwo = document.querySelector("#currency-two");
         this.amountTwo = document.querySelector("#amount-two");
-        this.swapButton = document.querySelector("button#rate");
+        this.swapButton = document.querySelector("#swap");
         this.rate = document.querySelector(".rate");
         this.loading = document.querySelector("#state-request");
         this.error = document.querySelector("#error-request");
         this.container = document.querySelector(".container");
-        this.swap = document.querySelector(".swap")
-
     }
 }
