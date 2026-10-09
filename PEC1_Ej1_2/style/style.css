@@ -130,9 +130,17 @@ button:active {
 }
 
 .hide {
-    display: none
+    opacity: 0
 }
 
-#error-request{
+#error-request {
     color: red
+}
+
+#state-request {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
 }
