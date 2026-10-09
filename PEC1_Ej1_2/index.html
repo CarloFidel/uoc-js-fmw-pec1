@@ -10,50 +10,49 @@
 <body>
     <main>
         <h1>Calculadora de tipos de cambio</h1>
-        <form id="exchange-form">
-            <div>
-                <label for="amount">Cantidad</label>
-                <input
-                    id="amount"
-                    name="amount"
-                    type="number"
-                    min="0"
-                    step="any"
-                    inputmode="decimal"
-                    required
-                >
-            </div>
+        <p>Choose de currensy and the amounts</p>
 
-            <div>
-                <label for="base-currency">Moneda de origen</label>
-                <select id="base-currency" name="baseCurrency" required>
-                    <option value="USD" selected>USD - Dólar estadounidense</option>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="GBP">GBP - Libra esterlina</option>
-                    <option value="JPY">JPY - Yen japonés</option>
-                    <option value="CAD">CAD - Dólar canadiense</option>
-                </select>
-            </div>
+<div class="container">
+    <div class="currency">
+        <select id="currency-one" class="">
+            <option value="USD" selected >USD - Dólar estadounidense</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - Libra esterlina</option>
+            <option value="JPY">JPY - Yen japonés</option>
+            <option value="CAD">CAD - Dólar canadiense</option>
+            <option value="AUD">AUD - Dólar australiano</option>
+            <option value="CHF">CHF - Franco suizo</option>
+            <option value="CNY">CNY - Yuan chino</option>
+            <option value="SEK">SEK - Corona sueca</option>
+            <option value="NOK">NOK - Corona noruega</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1">
 
-            <div>
-                <label for="target-currency">Moneda de destino</label>
-                <select id="target-currency" name="targetCurrency" required>
-                    <option value="EUR" selected>EUR - Euro</option>
-                    <option value="USD">USD - Dólar estadounidense</option>
-                    <option value="GBP">GBP - Libra esterlina</option>
-                    <option value="JPY">JPY - Yen japonés</option>
-                    <option value="CAD">CAD - Dólar canadiense</option>
-                </select>
-            </div>
+        <div class="swap-rate-container">
+            <button class="btn" id="rate">Swap</button>
+            <div class="rate" id="rate"></div>
+        </div>
 
-            <button type="submit">Convertir</button>
-        </form>
 
-        <p id="loading" role="status" aria-live="polite" hidden>
-            Consultando tipos de cambio…
-        </p>
-        <p id="error" role="alert" hidden></p>
-        <p id="result" aria-live="polite"></p>
+    </div>
+        <div class="currency">
+        <select id="currency-two" class="">
+            <option value="USD">USD - Dólar estadounidense</option>
+            <option value="EUR" selected >EUR - Euro</option>
+            <option value="GBP">GBP - Libra esterlina</option>
+            <option value="JPY">JPY - Yen japonés</option>
+            <option value="CAD">CAD - Dólar canadiense</option>
+            <option value="AUD">AUD - Dólar australiano</option>
+            <option value="CHF">CHF - Franco suizo</option>
+            <option value="CNY">CNY - Yuan chino</option>
+            <option value="SEK">SEK - Corona sueca</option>
+            <option value="NOK">NOK - Corona noruega</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0">
+    </div>
+
+</div>
+        
     </main>
 
     <script type="module" src="./script.js"></script>

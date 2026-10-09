@@ -1,11 +1,10 @@
 export class HtmlElements {
     constructor() {
-        this.form = document.querySelector("#exchange-form");
-        this.amount = document.querySelector("#amount");
-        this.baseCurrency = document.querySelector("#base-currency");
-        this.targetCurrency = document.querySelector("#target-currency");
-        this.loading = document.querySelector("#loading");
-        this.error = document.querySelector("#error");
-        this.result = document.querySelector("#result");
+        this.currencyOne = document.querySelector("#currency-one");
+        this.amountOne = document.querySelector("#amount-one");
+        this.currencyTwo = document.querySelector("#currency-two");
+        this.amountTwo = document.querySelector("#amount-two");
+        this.swapButton = document.querySelector("button#rate");
+        this.rate = document.querySelector(".rate");
     }
 }
