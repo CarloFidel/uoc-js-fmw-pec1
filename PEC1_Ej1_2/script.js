@@ -1,3 +1,4 @@
-import { getData } from "./services/fetch.js";
+import { calculate, engine } from "./events/events.js";
 
-getData()
+engine()
+calculate()

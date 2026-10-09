@@ -37,7 +37,8 @@ p {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 76px;
+    position: relative;
 }
 
 .currency {
@@ -54,6 +55,16 @@ p {
 .currency:focus-within {
     border-color: #60a5fa;
     box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+.swap-rate-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 select,
@@ -93,7 +104,7 @@ button {
     padding: 12px 18px;
     border: none;
     border-radius: 10px;
-    background: #2563eb;
+    background: #25eba6;
     color: white;
     font-weight: 600;
     cursor: pointer;
@@ -101,10 +112,27 @@ button {
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #1dd890;
 }
 
 button:active {
     transform: translateY(1px);
 }
 
+.rate {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #eff6ff;
+    color: #1dd8a6;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hide {
+    display: none
+}
+
+#error-request{
+    color: red
+}

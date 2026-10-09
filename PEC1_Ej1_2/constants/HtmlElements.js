@@ -6,5 +6,10 @@ export class HtmlElements {
         this.amountTwo = document.querySelector("#amount-two");
         this.swapButton = document.querySelector("button#rate");
         this.rate = document.querySelector(".rate");
+        this.loading = document.querySelector("#state-request");
+        this.error = document.querySelector("#error-request");
+        this.container = document.querySelector(".container");
+        this.swap = document.querySelector(".swap")
+
     }
 }
