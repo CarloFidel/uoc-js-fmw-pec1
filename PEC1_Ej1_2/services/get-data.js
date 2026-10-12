@@ -3,9 +3,6 @@ import { setError } from "../utility/error.js";
 import { setLoading } from "../utility/loading.js";
 import { BASE_URL } from "./config/basURL.js";
 
-const url = BASE_URL + APPEXCHANGE_PRIVATE_KEY
-
-
 export async function getData() {
 
     setLoading(true)
