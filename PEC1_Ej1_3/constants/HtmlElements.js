@@ -5,6 +5,8 @@ export class HtmlElements {
         this.count = document.getElementById('count');
         this.total = document.getElementById('total');
         this.movieSelect = document.getElementById('movie');
-
+        this.loading = document.getElementById('state-request');
+        this.error = document.getElementById('error-request');
+        this.currencySelect = document.getElementById('currency-select');
     }
 }

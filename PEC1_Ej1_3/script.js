@@ -4,6 +4,7 @@ import { populateUI, setMovieData, updateSelectedCount } from "./store/local-sto
 
 const htmlElements = new HtmlElements
 
+
 populateUI()
 
 let ticketPrice = +htmlElements.movieSelect.value;
@@ -15,3 +16,4 @@ listeners(ticketPrice)
 
 
 updateSelectedCount(ticketPrice);
+

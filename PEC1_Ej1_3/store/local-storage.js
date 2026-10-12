@@ -1,11 +1,15 @@
 import { HtmlElements } from "../constants/HtmlElements.js";
+import { getCurrencyData } from "../services/get-data.js";
 
 const htmlElements = new HtmlElements
+
+const rate = await getCurrencyData()
+
 
 
 export const setMovieData = (movieIndex, moviePrice) => {
     localStorage.setItem('selectedMovieIndex', movieIndex);
-    localStorage.setItem('selectedMoviePrice', moviePrice);
+    localStorage.setItem('selectedMoviePrice', moviePrice );
 }
 
 export const updateSelectedCount = (ticketPrice) => {
@@ -17,7 +21,7 @@ export const updateSelectedCount = (ticketPrice) => {
 
     const selectedSeatsCount = selectedSeats.length;
 
-    htmlElements.count.innerText = selectedSeatsCount;
+    htmlElements.count.innerText = selectedSeatsCount; 
     htmlElements.total.innerText = selectedSeatsCount * ticketPrice;
 
     setMovieData(htmlElements.movieSelect.selectedIndex, htmlElements.movieSelect.value);

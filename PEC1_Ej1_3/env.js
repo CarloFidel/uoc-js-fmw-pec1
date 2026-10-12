@@ -1,0 +1,2 @@
+
+export const APPEXCHANGE_PRIVATE_KEY = '030f63799cb8f02db8d3e4fd'
