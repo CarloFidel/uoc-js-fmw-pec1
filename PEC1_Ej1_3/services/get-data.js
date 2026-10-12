@@ -23,7 +23,6 @@ export async function getCurrencyData() {
         setLoading(false)
         setError(false)
 
-        console.log(data.conversion_rates)
 
         return data.conversion_rates
 

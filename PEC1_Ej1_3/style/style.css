@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+:root {
+  --background-color: #242333;
+  --available-seat-color: #444451;
+  --selected-seat-color: #6feaf6;
+  --occupied-seat-color: #fff;
+  --showcase-text-color: #777;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #242333;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--occupied-seat-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Lato', sans-serif;
   margin: 0;
+  padding: 24px 12px;
 }
 
 .movie-container {
@@ -26,7 +35,8 @@ body {
   border-radius: 5px;
   font-size: 14px;
   margin-left: 10px;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px;
+  cursor: pointer;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -38,20 +48,21 @@ body {
 }
 
 .seat {
-  background-color: #444451;
+  background-color: var(--available-seat-color);
   height: 12px;
   width: 15px;
   margin: 3px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .seat.selected {
-  background-color: #6feaf6;
+  background-color: var(--selected-seat-color);
 }
 
 .seat.occupied {
-  background-color: #fff;
+  background-color: var(--occupied-seat-color);
 }
 
 .seat:nth-of-type(2) {
@@ -76,7 +87,7 @@ body {
   background: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
   border-radius: 5px;
-  color: #777;
+  color: var(--showcase-text-color);
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -100,7 +111,8 @@ body {
 .screen {
   background-color: #fff;
   height: 70px;
-  width: 100%;
+  width: 90%;
+  max-width: 300px;
   margin: 15px 0;
   transform: rotateX(-45deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
@@ -111,9 +123,19 @@ p.text {
 }
 
 p.text span {
-  color: #6feaf6;
+  color: var(--selected-seat-color);
 }
 
 .hide {
-    opacity: 0
+  opacity: 0;
+}
+
+@media (max-width: 480px) {
+  .showcase {
+    padding: 5px;
+  }
+
+  .showcase li {
+    margin: 0 5px;
+  }
 }

@@ -22,7 +22,7 @@ export const updateSelectedCount = (ticketPrice) => {
     const selectedSeatsCount = selectedSeats.length;
 
     htmlElements.count.innerText = selectedSeatsCount; 
-    htmlElements.total.innerText = selectedSeatsCount * ticketPrice;
+    htmlElements.total.innerText =(selectedSeatsCount * ticketPrice).toFixed(2);
 
     setMovieData(htmlElements.movieSelect.selectedIndex, htmlElements.movieSelect.value);
 }

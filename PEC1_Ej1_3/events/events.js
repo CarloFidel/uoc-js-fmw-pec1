@@ -8,8 +8,8 @@ const htmlElements = new HtmlElements
 export const listeners = (ticketPrice) => {
     htmlElements.movieSelect.addEventListener('change', event => {
         ticketPrice = +event.target.value;
-        setMovieData(event.target.selectedIndex, event.target.value);
-        updateSelectedCount(ticketPrice);
+        setMovieData(event.target.selectedIndex, event.target.value * currencyUSDReferenceValue);
+        updateSelectedCount(ticketPrice * currencyUSDReferenceValue);
     });
 
     htmlElements.container.addEventListener('click', event => {
@@ -19,7 +19,7 @@ export const listeners = (ticketPrice) => {
         ) {
             event.target.classList.toggle('selected');
 
-            updateSelectedCount(ticketPrice);
+            updateSelectedCount(ticketPrice * currencyUSDReferenceValue);
         }
     });
 
